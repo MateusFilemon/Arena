@@ -115,7 +115,7 @@ public class Character : MonoBehaviour
 
     protected virtual void Chase()
     {
-        if (target != null) return;
+        if (target == null) return;
         float _distance = Vector3.Distance(transform.position, target.position);
 
         if (_distance > simpleAttackRange)
